@@ -20,6 +20,10 @@ public class Commands implements CommandExecutor {
             sender.sendMessage("must be a player");
             return true;
         }
+        if (!sender.hasPermission("book.admin")) {
+            sender.sendMessage(Utils.chat("&c&lInsufficient permissions."));
+            return true;
+        }
         Player p = (Player) sender;
         // correct args
         switch (args[0]) {
