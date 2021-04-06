@@ -1,0 +1,7 @@
+name: BookGambling
+version: ${project.version}
+main: me.dkflab.bookgambling.BookGambling
+commands:
+  book:
+    description: Book gambling management
+    usage: /book
